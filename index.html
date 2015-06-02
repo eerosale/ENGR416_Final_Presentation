@@ -21,7 +21,7 @@
   <link rel="stylesheet" media="screen" href="themes/style/web-2.0.css">
 
   <!-- Transition theme. More available in /themes/transition/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+  <link rel="stylesheet" media="screen" href="themes/transition/vertical-slide.css">
 
   <!-- Basic black and white print styles -->
   <link rel="stylesheet" media="print" href="core/print.css">
@@ -35,67 +35,160 @@
     <!-- Begin slides. Just make elements with a class of slide. -->
 
     <section class="slide">
-      <h1>1st SWE General Meeting</h1>
-      <h3>(of the spring semester)</h3>
-      </section>
-
+      <h1>Dishwasher Improvements </h1>
+          <p>ENGR 416 Final Presentation<p>
+      <img style="position: absolute; top: 540px; left: 1050px; width 415; height: 60px" src="http://upload.wikimedia.org/wikipedia/en/7/77/SFState_Logo.png">
+      <DIV style="position: absolute; top:600px; left:1040px; width:375px; height:20px">School of Engineering</DIV>
+         
+    </section>
 
     <section class="slide">
-    <h3>Content</h3>
-
-   <li> SWE Fun Facts </li>
-     <li> SWE Logo </li>
-    <li>Upcoming events</li>
-    <li>How to Become a member</li>
-     </section>
-
-     <section class="slide">
-      <h2>SWE Fun Facts</h2>
+      <h2>Content</h2>
       
-        
-          <p>There are approx. 27,000 members</p>
-          <p>55% of those members are students</p>
-          <p>Founded in 1950</p>
-          <p>We have a SWE star for a mascot</p>
-        
+        <ol>
+        <li  >
+         The Problem with Current Dishwashers
+        </li>
+        <li >
+         Our Solution
+         </li>
+         <li >
+         The Design Process
+         </li>
+         <li>
+         Results
+         </li>
+         <li >
+         Future Work - How can we Improve?
+         </li>
+         <li >
+         Demonstration
+         </li>
+         </ol>
+
+     
     </section>
 
  <section class="slide">
-      <h2> The SWE Logo</h2>
-      <img src="http://www.swe.uc.edu/_pictures/_logos/swe_logo.jpg">
-   
+      <h2>The Problem</h2>
+
+     <h3> Circular spray pattern is ineffecient</h3>
+     <p> -Food residue is left in corner dishes</p>
+     <p> -Cleanliness is dependent on dish orientation</p>
+     <img style="position:absolute; top:225px; left:600px; WIDTH:525px; HEIGHT:350px" src=http://i.imgur.com/ckW08BR.jpg"></img>
+     
+    
     </section>
 
        <section class="slide">
-      <h2>Upcoming Events </h2>
-            <ol>
-             <li>
-          <h3>Transbay Terminal Tour</h3>
-          <p>Friday, February 6th, 2:30pm, FREE</p>
-        </li>
-         <li>
-         <h3>Techshop SF: Valentine's Day Card & Chocolate Making</h3>
-         <p>Monday, February 9th, 5:00-8:00pm, $20 fee</p>
-       
+      <h2>Our Solution</h2>
+      <h3>We made an improved dishwasher with the following criteria:</h3>
         <li>
-          <h3>Region A Conference @ University of Pacific</h3>
-          <p>Friday-Sunday, February 20-22nd, $45</p>
-        </li>
-         <li>
-          <h3>CLCC Module with Darcie: Effective Personal Communication</h3>
-          <p>Monday, March 9th, 6:00pm, FREE</p>
-        </li>
-      </ol>
+         <h3>Improves area coverage in dishwasher</h3></li>
+         <p>Replaced rotating arm with novel mechanical system<p>
+        <li><h3>Hits more angles than a normal dishwasher</H3>
+          <p>Linear motion rack has two rotating heads
+        
+       
+         </li>
+      
+   
     </section>
 
+    <section class="slide">
+      <h2>The Mechanical Design</h2>
+      
+     <DIV style="position: absolute; top:150px; left:225px; width:875px; height:120px"><h3>Water pressure spins jets and Cleans Dishes</h3></DIV>
+      <img style="position:absolute; top:250px; left:225px; WIDTH:325px; HEIGHT:350px"src=http://i.imgur.com/ysXTbUM.jpg"></img> 
+      <img style="position:absolute; top:250px; left: 775px; WIDTH:325px; HEIGHT:350px"src=http://i.imgur.com/fCQth9L.jpg"></img>
 
-<section class ="slide">
-<h2>How to become a member</h2>
-<p>Go to swe.org</p>
-<p>Annual Fee of $20 </p>
+      </section> 
+
+  <section class="slide">
+  <h2>(continued)</h2>
+
+   <DIV style="position: absolute; top:150px; left:50px; width:550px; height:500px"> 
+     <h3>Motor 180 rpm (A)</h3>
+     <p></p>
+     <h3>3:1 Gear reduction to sheave (B)</h3>
+     <p></p>
+     <h3>12:1 power screw (D)</h3>
+     <p></p>
+     <h3>Net movement 5"/min</h3>
+     <p></p>
+     </DIV>
+
+ <img style="position:absolute; top:150px; left:550px; WIDTH:525px; HEIGHT:450px"src=http://i.imgur.com/KOgFBBS.jpg"></img>
+       
+
 </section>
+    
+    <section class="slide">
+    <h2>The Electrical Design</h2>
+    <h3>How we made the system autonomous</h3>
+    <li>12V Gearhead Motor</li>
+    <li>Three relays to switch motor direction</li>
+    <li>Waterproof limit switches placed </li>
+    <li>Arduino Microcontroller used</li>
+    
+     <img style="position:absolute; top:250px; left: 475px; WIDTH:500px; HEIGHT:375px"src=http://i.imgur.com/RMCVR0u.jpg"></img>
 
-  
+
+    </section>
+
+      <section class="slide">
+    <h2>The Computer Science Design</h2>
+    <h3>How we made the project user friendly</h3>
+    <li>Arduino serially communicates with Python User Interface</li>
+    <li>Two options for length of Cycle</li>
+    <li>Allows for future work</li>
+    <img style="position:absolute; top:250px; left: 475px; WIDTH:550px; HEIGHT:375px"src=http://i.imgur.com/gEtxQ5M.jpg"></img>
+
+    
+
+    </section>
+
+      <section class="slide">
+      <h2>Results</h2>
+
+     <h3> Dishwasher Improvements Achieved the Stated Design Goals:</h3>
+     <ul>
+     <li><h3>Jets are aimed tangentially to spinner to cause rotation</h3></li>
+     <li><h3>Additional jets provide washing action</h3></li>
+     <li><h3>More coverage is seen through acrylic casing</h3></li>
+
+</ul>
+
+      </section>
+
+      <section class="slide">
+      <h2>Future Work</h2>
+      <h3>Project leaves great room for improvement</h3>
+      <ul>
+     
+      <li>Use better material to prevent rust</li>
+      <li>Allow a reset position in case of black-out</li>
+      <li>Have one power source for whole system</li>
+      <li>Use a different microcontroller</li>
+      <li>Make it wifi enabled and have a Web App (cool!)</li>
+
+ 
+      </section>
+
+      <section class="slide">
+      <h2>Demonstration with Water</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Pv3HPX_2lec" frameborder="0" allowfullscreen></iframe>
+      </section>
+
+  <section class="slide">
+      <h2>Demonstration without Water</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7XWzW74d0jg" frameborder="0" allowfullscreen></iframe>
+      </section>
+
+       <section class="slide">
+      <h1>Thank you for Watching</h1>
+      </section>
+
 
     <!-- End slides. -->
 
